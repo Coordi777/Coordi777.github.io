@@ -1,0 +1,51 @@
+{{ if .Site.Params.projects.enable | default false }}
+{{- $projects := .Site.Language.Params.projects | default .Site.Params.projects -}}
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $projects.title | default .Site.Params.projects.title | default (i18n "projects") }}</h3>
+        <div class="row justify-content-center mt-4">
+            {{ range $projects.items | default .Site.Params.projects.items }}
+            <div class="col-lg-10 col-md-12 mb-3">
+                <div class="project-item d-flex align-items-start p-3">
+                    <div class="project-icon me-3 mt-1">
+                        {{ if .links }}
+                            {{ range first 1 .links }}
+                            <a href="{{ .url }}" target="_blank" class="project-link-icon">
+                                <i class="{{ .icon }} fa-lg"></i>
+                            </a>
+                            {{ end }}
+                        {{ else }}
+                            <i class="fas fa-file-alt fa-lg"></i>
+                        {{ end }}
+                    </div>
+                    <div class="project-content flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <h5 class="project-title mb-1">{{ .title }}</h5>
+                        </div>
+                        <div class="project-badges mb-1">
+                            {{ range .badges }}
+                            <span class="badge badge-secondary">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ if .content }}
+                        <div class="project-desc secondary-font mt-1">
+                            {{ .content | safeHTML }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ if .links }}
+                    <div class="project-links ms-3 d-flex align-items-center">
+                        {{ range .links }}
+                        <a href="{{ .url }}" target="_blank" class="ms-2" title="Link">
+                            <i class="{{ .icon }}"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

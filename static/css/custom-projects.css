@@ -1,0 +1,74 @@
+/* Custom Projects - Timeline/List Style */
+
+#projects h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#projects .project-item {
+    background-color: var(--secondary-color);
+    border-radius: 0.75rem;
+    border-left: 3px solid var(--primary-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projects .project-item:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(15, 80, 100, 0.12);
+}
+
+#projects .project-icon {
+    min-width: 32px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#projects .project-icon a {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+
+#projects .project-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+}
+
+#projects .project-title a {
+    color: var(--text-color) !important;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#projects .project-title a:hover {
+    color: var(--primary-color) !important;
+}
+
+#projects .project-badges .badge {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+#projects .project-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary-color);
+    line-height: 1.5;
+}
+
+#projects .project-links a {
+    color: var(--text-link-color) !important;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+#projects .project-links a:hover {
+    opacity: 1;
+}

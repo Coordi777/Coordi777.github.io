@@ -1,0 +1,565 @@
+baseURL: "https://coordi777.github.io/"
+languageCode: "en"
+title: "CoorDi"
+theme: hugo-profile
+
+# Multilingual configuration
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content"
+  zh:
+    languageName: "中文"
+    weight: 2
+    contentDir: "content/zh"
+    params:
+      hero:
+        intro: "嗨 👋，我是"
+        title: "CoorDi"
+        subtitle: "🎙️ 语音算法工程师"
+        content: "网易云音乐语音算法工程师 🎵，专注于TTS语音合成、声音转换与AI音乐生成。复旦大学电子信息硕士，在语音合成、声音克隆和前沿音频AI研究方面有丰富的实战经验 🚀"
+        button:
+          name: "简历"
+      about:
+        title: "🙋 关于我"
+        content: |-
+          🎵 现就职于**网易云音乐**，担任语音算法工程师，专注于TTS语音合成、声音转换、AI音乐生成与评估及MV视频自动化。**复旦大学**电子信息专业硕士毕业，在语音合成、声音克隆与音频生成领域有深厚积累。
+
+          💡 曾在**字节跳动**和**哔哩哔哩**实习，深入研究扩散模型无训练加速、CV/NLP应用及ComfyUI插件开发。热衷于用AI技术赋能语音、音乐和音频——让研究成果真正落地为产品。
+
+          🏃 工作之余，热爱飞盘和跑步。音乐上是 **YOASOBI** 和**周杰伦**的粉丝，同时也是推理影视爱好者 🔍。
+        skills:
+          title: "🛠️ 我最近使用的技术栈："
+          items:
+            - "TTS"
+            - "AI Music Generation"
+            - "Diffusion Model"
+            - "PyTorch"
+            - "AI-MV"
+            - "LCM & ADD"
+      experience:
+        title: "💼 工作经历"
+        items:
+          - company: "网易云音乐"
+            companyUrl: "https://music.163.com/"
+            jobs:
+              - name: "语音算法工程师"
+                date: "2025年6月 - 至今"
+                content: |      
+                  🎤 主导TTS与声音转换技术研发——持续提升语音合成的自然度与表现力。
+                  🎶 构建AI音乐生成算法，探索生成式模型在音乐创作中的落地应用。
+                  📊 搭建AI音乐评估体系，让生成音乐的质量更贴合人类审美。
+                  🎬 设计端到端Agent，实现歌曲MV全自动化生成。
+                  - TTS语音合成与声音转换
+                  - AI音乐生成与评估
+                  - MV视频生成
+          - company: "字节跳动"
+            companyUrl: "https://www.bytedance.com/"
+            jobs:
+              - name: "AIGC算法优化实习生"
+                date: "2023年12月 - 2024年8月"
+                content: |
+                  ⚡ 优化DDPM推理速度，改进蒸馏策略大幅提升生成效率。
+                  🔬 深耕Classifier-Free Guidance (CFG)算法，紧跟RCFG、Limited Interval等前沿方案。
+                  🚀 独立开发Training-free CFG加速算法——效果对齐下实现20%推理加速。
+                  🧩 将自研加速算法集成为ComfyUI插件，面向社区开源交付。
+                  - 加速算法研究
+                  - CFG算法研究
+          - company: "哔哩哔哩"
+            companyUrl: "https://www.bilibili.com/"
+            jobs: 
+              - name: "CV/NLP算法实习生"
+                date: "2023年8月 - 2023年11月"
+                content: |
+                  🎯 训练模型识别低质与引流视频，守护平台内容质量。
+                  🤖 设计Prompt驱动的标题分析策略，基于BERT构建视频分类系统。
+                  📹 探索AIGC智能视频制作——自动提取新闻资讯，配图配音一键生成。
+                  - 视频理解
+                  - AIGC智能视频制作
+      education:
+        title: "🎓 教育经历"
+        items:
+          - title: "电子信息硕士"
+            school:
+              name: "复旦大学"
+              url: "https://www.fudan.edu.cn/"
+            date: "2022年9月 - 2025年6月"
+            GPA: "3.88/4.0 | 专业排名: 4/235"
+            content: |-
+              📡 在信息科学与工程学院研究扩散模型在SAR图像上的应用，发表3篇一作论文，在校期间屡获殊荣。
+                - 🏅 国家奖学金
+                - 🏅 三星奖学金
+                - 🎖️ 上海市优秀毕业生
+                - 📜 优秀学生奖学金
+            featuredLink:
+              enable: false
+          - title: "网络空间安全学士"
+            school:
+              name: "中国科学技术大学"
+              url: "https://www.ustc.edu.cn/"
+            date: "2018年9月 - 2022年6月"
+            GPA: "3.56/4.3"
+            content: |-
+              🔐 主攻网络空间安全，研究方向为Image Captioning算法优化与加速，积极参与学生工作和学科竞赛。
+                - 📜 优秀学生奖学金
+                - 📜 王小谟网安优秀学生奖学金
+                - 🎖️ 中科大优秀毕业生
+                - 🎖️ 安徽省优秀毕业生
+                - 👥 院学生会主席
+            featuredLink:
+              enable: false
+      projects:
+        title: "🏆 学术与竞赛成果"
+        items:
+          # 论文发表
+          - title: "Synergizing Large-Scale Music Representations and Metric-Based Meta-Learning for Few-Shot Song Aesthetics Evaluation"
+            content: "📄 ICASSP 2026 (Poster) | 二作 | 2026"
+            badges:
+              - "ICASSP 2026"
+              - "Second Author"
+              - "Music Aesthetics"
+              - "Meta-Learning"
+            links:
+              - icon: fa fa-file-pdf
+                url: "#"
+          - title: "Accelerating Diffusion for SAR-to-Optical Image Translation via Adversarial Consistency Distillation"
+            content: "📄 Arxiv | 一作 | 2024"
+            badges:
+              - "Arxiv"
+              - "First Author"
+              - "Diffusion Model"
+            links:
+              - icon: fa fa-file-pdf
+                url: https://arxiv.org/abs/2411.16335
+          - title: "Conditional Diffusion for SAR to Optical Image Translation"
+            content: "📄 IEEE GRSL (Q2期刊) | 一作 | 2024"
+            badges:
+              - "IEEE GRSL Q2"
+              - "First Author"
+              - "SAR"
+            links:
+              - icon: fa fa-file-pdf
+                url: https://ieeexplore.ieee.org/
+          - title: "SAR to Optical Image Translation with Color Supervised Diffusion Model"
+            content: "📄 IGARSS 国际会议 | 一作 | 2023"
+            badges:
+              - "IGARSS"
+              - "First Author"
+              - "SAR"
+            links:
+              - icon: fa fa-file-pdf
+                url: https://ieeexplore.ieee.org/
+          # 竞赛
+          - title: "🥈 Kaggle 竞赛银牌 ×2"
+            content: "• CVPR Image Matching Challenge 2023 — Top 7%<br>• LLM AI文本检测 — Top 4%"
+            badges:
+              - "Kaggle Silver"
+              - "Computer Vision"
+              - "NLP"
+            links:
+              - icon: fab fa-kaggle
+                url: https://www.kaggle.com
+          - title: "🥉 Kaggle 竞赛铜牌 ×2"
+            content: "• Bengali.AI 语音识别 — Top 9%<br>• Google Research Image Matching 2024 — Top 6%"
+            badges:
+              - "Kaggle Bronze"
+              - "Speech Recognition"
+              - "Computer Vision"
+            links:
+              - icon: fab fa-kaggle
+                url: https://www.kaggle.com
+      contact:
+        title: "📬 联系我"
+        content: 欢迎随时联系 ✉️ —— 无论是技术交流、合作邀约，还是单纯打个招呼，我都很乐意回复！
+        btnName: 📧 发送邮件
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main: []
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "CoorDi's Homepage"
+  description: Speech Algorithm Engineer | Fudan University M.S. | TTS & AI Music
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.svg"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Custom CSS
+  customCSS: true
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  color:
+    textColor: "#2d3748"
+    secondaryTextColor: "#5a6b7f"
+    textLinkColor: "#0891b2"
+    backgroundColor: "#f0f9ff"
+    secondaryBackgroundColor: "#e0f2fe"
+    primaryColor: "#0891b2"
+    secondaryColor: "#ffffff"
+
+    darkmode:
+      textColor: "#e2e8f0"
+      secondaryTextColor: "#94a3b8"
+      textLinkColor: "#22d3ee"
+      backgroundColor: "#0f172a"
+      secondaryBackgroundColor: "#1e293b"
+      primaryColor: "#22d3ee"
+      secondaryColor: "#1e293b"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "CoorDi" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hey there 👋, I'm"
+    title: "CoorDi"
+    subtitle: "🎙️ Speech Algorithm Engineer"
+    content: "A Speech Algorithm Engineer at NetEase Cloud Music 🎵, passionate about TTS, Voice Conversion, and AI Music Generation. Fudan University M.S. graduate with hands-on experience in speech synthesis, voice cloning, and cutting-edge audio AI research 🚀."
+    image: ""
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Coordi777
+        - icon: fab fa-x-twitter
+          url: https://x.com/Coordi777
+        - icon: fab fa-kaggle
+          url: https://www.kaggle.com/bxy0125
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "🙋 About Me"
+    image: "/images/me.png"
+    content: |-
+      🎵 Currently a Speech Algorithm Engineer at **NetEase Cloud Music**, where I work on TTS, Voice Conversion, AI Music Generation & Evaluation, and MV video automation. I hold a Master's degree in Electronic Information from **Fudan University**, with deep expertise in speech synthesis, voice cloning, and audio generation.
+
+      💡 Previously interned at **ByteDance** and **Bilibili**, diving into training-free diffusion acceleration, CV/NLP applications, and ComfyUI plugin development. I love pushing the boundaries of AI in speech, music, and audio — turning research ideas into real-world products.
+
+      🏃 Outside of work, I'm a fan of ultimate frisbee and running. Music-wise, I'm into **YOASOBI** and **Jay Chou**. Also a big mystery & detective film/TV enthusiast 🔍.
+    skills:
+      enable: true
+      title: "🛠️ Here are a few technologies I've been working with recently:"
+      items:
+        - "TTS"
+        - "AI Music Generation"
+        - "AI-MV"
+        - "Diffusion Model"
+        - "PyTorch"
+        - "LCM & ADD"
+
+  # Experience
+  experience:
+    enable: true
+    title: "💼 Work Experience"
+    items:
+      - company: "NetEase Cloud Music"
+        companyUrl: "https://music.163.com/"
+        jobs:
+          - name: "Speech Algorithm Engineer"
+            date: "Jun. 2025 - Present"
+            content: |      
+              🎤 Leading TTS & Voice Conversion R&D — improving naturalness and expressiveness of speech synthesis.
+              🎶 Building AI music generation algorithms, exploring generative models for creative music production.
+              📊 Designing AI music evaluation systems that align generated music quality with human aesthetics.
+              🎬 Developing Agents for automated song MV generation from end to end.
+              - TTS & Voice Conversion
+              - AI Music Generation & Evaluation
+              - MV Video Generation
+
+      - company: "ByteDance"
+        companyUrl: "https://www.bytedance.com/"
+        jobs:
+          - name: "AIGC Algorithm Optimization Intern"
+            date: "Dec. 2023 - Aug. 2024"
+            content: |
+              ⚡ Optimized DDPM inference speed through improved distillation strategies.
+              🔬 Deep-dived into Classifier-Free Guidance (CFG), tracking RCFG, Limited Interval and other cutting-edge improvements.
+              🚀 Independently developed a training-free CFG acceleration algorithm — achieving 20% speedup with quality parity.
+              🧩 Shipped a ComfyUI plugin integrating self-developed CFG acceleration with other train-free methods.
+              - Acceleration Algorithm Research
+              - CFG Algorithm Research
+
+      - company: "Bilibili"
+        companyUrl: "https://www.bilibili.com/"
+        jobs: 
+          - name: "CV/NLP Algorithm Intern"
+            date: "Aug. 2023 - Nov. 2023"
+            content: |
+              🎯 Trained models for low-quality & traffic-directing video recognition across the platform.
+              🤖 Designed prompt-based title analysis and built a BERT-powered video classification system.
+              📹 Explored AIGC-driven video production — automated news extraction, image/audio pairing, and video generation.
+              - Video Understanding
+              - AIGC Intelligent Video Production
+
+  # Education
+  education:
+    enable: true
+    title: "🎓 Education"
+    index: false
+    items:
+      - title: "Master of Science in Electronic Information"
+        school:
+          name: "Fudan University"
+          url: "https://www.fudan.edu.cn/"
+        date: "Sept. 2022 - Jun. 2025"
+        GPA: "3.88/4.0 | Rank: 4/235"
+        content: |-
+          📡 Researched diffusion model applications on SAR images at the School of Information Science and Engineering. Published 3 first-author papers and received multiple honors during my studies.
+            - 🏅 National Scholarship
+            - 🏅 Samsung Scholarship
+            - 🎖️ Shanghai Outstanding Graduate
+            - 📜 Outstanding Student Scholarship
+        featuredLink:
+          enable: false
+      - title: "Bachelor of Science in Cyberspace Security"
+        school:
+          name: "University of Science and Technology of China"
+          url: "https://www.ustc.edu.cn/"
+        date: "Sept. 2018 - Jun. 2022"
+        GPA: "3.56/4.3"
+        content: |-
+          🔐 Studied Cyberspace Security with a focus on Image Captioning algorithm optimization & acceleration. Active in student leadership and competitions.
+            - 📜 Outstanding Student Scholarship
+            - 📜 Wang Xiaomo Cyberspace Security Scholarship
+            - 🎖️ USTC Outstanding Graduate
+            - 🎖️ Anhui Province Outstanding Graduate
+            - 👥 President of School Student Union
+        featuredLink:
+          enable: false
+
+  # Projects (Academic Achievements)
+  projects:
+    enable: true
+    title: "🏆 Achievements"
+    items:
+      # Publications
+      - title: "Synergizing Large-Scale Music Representations and Metric-Based Meta-Learning for Few-Shot Song Aesthetics Evaluation"
+        content: "📄 ICASSP 2026 (Poster) | Second Author | 2026"
+        badges:
+          - "ICASSP 2026"
+          - "Second Author"
+          - "Music Aesthetics"
+          - "Meta-Learning"
+        links:
+          - icon: fa fa-file-pdf
+            url: "#"
+      
+      - title: "Accelerating Diffusion for SAR-to-Optical Image Translation via Adversarial Consistency Distillation"
+        content: "📄 Arxiv | First Author | 2024"
+        badges:
+          - "Arxiv"
+          - "First Author"
+          - "Diffusion Model"
+        links:
+          - icon: fa fa-file-pdf
+            url: https://arxiv.org/abs/2411.16335
+      
+      - title: "Conditional Diffusion for SAR to Optical Image Translation"
+        content: "📄 IEEE GRSL (Q2 Journal) | First Author | 2024"
+        badges:
+          - "IEEE GRSL Q2"
+          - "First Author"
+          - "SAR"
+        links:
+          - icon: fa fa-file-pdf
+            url: https://ieeexplore.ieee.org/
+      
+      - title: "SAR to Optical Image Translation with Color Supervised Diffusion Model"
+        content: "📄 IGARSS Conference | First Author | 2023"
+        badges:
+          - "IGARSS"
+          - "First Author"
+          - "SAR"
+        links:
+          - icon: fa fa-file-pdf
+            url: https://ieeexplore.ieee.org/
+
+      # Competitions
+      - title: "🥈 Kaggle Silver Medals ×2"
+        content: "• Google Research | CVPR Image Matching Challenge 2023 — Top 7%<br>• The Learning Agency Lab | LLM AI Text Detection — Top 4%"
+        badges:
+          - "Kaggle Silver"
+          - "Computer Vision"
+          - "NLP"
+        links:
+          - icon: fab fa-kaggle
+            url: https://www.kaggle.com
+      
+      - title: "🥉 Kaggle Bronze Medals ×2"
+        content: "• Bengali.AI Speech Recognition — Top 9%<br>• Google Research Image Matching Challenge 2024 — Top 6%"
+        badges:
+          - "Kaggle Bronze"
+          - "Speech Recognition"
+          - "Computer Vision"
+        links:
+          - icon: fab fa-kaggle
+            url: https://www.kaggle.com
+
+  # Achievements
+  # achievements:
+  #   enable: true
+  #   title: "Honors & Awards"
+  #   items:
+  #     - title: Outstanding Intern at ByteDance & Bilibili
+  #       content: Recognized as an Excellent Intern at ByteDance and Bilibili for outstanding work performance and technical capabilities
+  #       image: /images/achievement.jpg
+  #     - title: University Scholarships
+  #       content: Consistently maintained excellent academic performance during undergraduate and master's studies, awarded University Scholarship multiple times
+  #       image: /images/achievement.jpg
+
+  #Contact
+  contact:
+    enable: true
+    title: "📬 Contact"
+    content: My inbox is always open ✉️ — whether you have a question, a collaboration idea, or just want to say hi, I'd love to hear from you!
+    btnName: 📧 Mail me
+    btnLink: mailto:coordixy777@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    # recentPosts:
+    #   path: "blogs"
+    #   count: 3
+    #   title: "Recent Posts"
+    #   enable: true
+    #   disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/Coordi777
+      X: https://x.com/Coordi777
+      kaggle: https://www.kaggle.com/bxy0125
+      discord: https://discordapp.com/users/1070251022167048203
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>

@@ -1,0 +1,288 @@
+/* ===== Override theme.css: make sections transparent ===== */
+
+.light > * {
+    background-color: transparent !important;
+}
+
+.light > nav.navbar {
+    background-color: rgba(235, 248, 255, 0.75) !important;
+}
+
+.dark > * {
+    background-color: transparent !important;
+}
+
+.dark > nav.navbar {
+    background-color: rgba(15, 23, 42, 0.75) !important;
+}
+
+/* ===== Smooth Full-Page Gradient ===== */
+
+body,
+body.light {
+    background: linear-gradient(
+        180deg,
+        #e0f7fa 0%,
+        #e8f4f8 8%,
+        #dff0f7 16%,
+        #e6f2fb 24%,
+        #d4ecfa 32%,
+        #dceefb 40%,
+        #d0e8f7 48%,
+        #dceff9 56%,
+        #e2f4fc 64%,
+        #d6eef8 72%,
+        #daf0fa 80%,
+        #e4f6fd 88%,
+        #e0f2fe 100%
+    ) !important;
+    background-attachment: fixed !important;
+}
+
+body.dark {
+    background: linear-gradient(
+        180deg,
+        #0b1929 0%,
+        #0d1f33 8%,
+        #0f2439 16%,
+        #0c1f35 24%,
+        #0e2540 32%,
+        #0b1e38 40%,
+        #0d2240 48%,
+        #0a1c36 56%,
+        #0c2038 64%,
+        #0e2540 72%,
+        #0b1e38 80%,
+        #0d2135 88%,
+        #0f172a 100%
+    ) !important;
+    background-attachment: fixed !important;
+}
+
+/* ===== Navbar ===== */
+
+nav.navbar {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(8, 145, 178, 0.08) !important;
+}
+
+/* Hide navbar brand logo (favicon) */
+nav.navbar .navbar-brand img {
+    display: none !important;
+}
+
+/* ===== Hero ===== */
+
+#hero h1 {
+    background: linear-gradient(135deg, #0891b2, #06b6d4, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#hero h2 {
+    color: #0e7490 !important;
+}
+
+.dark #hero h2 {
+    color: #22d3ee !important;
+}
+
+/* ===== Section Titles ===== */
+
+#about h3,
+#experience h3,
+#education h3,
+#projects h3,
+#contact h3 {
+    color: #0891b2 !important;
+    font-weight: 700;
+}
+
+.dark #about h3,
+.dark #experience h3,
+.dark #education h3,
+.dark #projects h3,
+.dark #contact h3 {
+    color: #22d3ee !important;
+}
+
+/* ===== Buttons ===== */
+
+#hero .btn,
+#contact .btn {
+    background: linear-gradient(135deg, #0891b2, #06b6d4) !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(8, 145, 178, 0.25);
+}
+
+#hero .btn:hover,
+#contact .btn:hover {
+    background: linear-gradient(135deg, #0e7490, #0891b2) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.35);
+}
+
+/* ===== About Avatar ===== */
+
+#about .img-thumbnail {
+    border: 3px solid transparent !important;
+    background-image: linear-gradient(white, white), linear-gradient(135deg, #0891b2, #22d3ee, #06b6d4);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 8px 30px rgba(8, 145, 178, 0.15);
+}
+
+.dark #about .img-thumbnail {
+    background-image: linear-gradient(#0f172a, #0f172a), linear-gradient(135deg, #0891b2, #22d3ee, #06b6d4);
+}
+
+/* ===== Projects List ===== */
+
+#projects .project-item {
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 0.75rem;
+    border-left: 3px solid #0891b2;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(6px);
+}
+
+.dark #projects .project-item {
+    background: rgba(30, 41, 59, 0.45);
+    border-left: 3px solid #22d3ee;
+}
+
+#projects .project-item:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(8, 145, 178, 0.12);
+}
+
+#projects .project-icon {
+    min-width: 32px;
+    text-align: center;
+    color: #0891b2;
+}
+
+.dark #projects .project-icon {
+    color: #22d3ee;
+}
+
+#projects .project-icon a {
+    color: #0891b2 !important;
+    text-decoration: none;
+}
+
+.dark #projects .project-icon a {
+    color: #22d3ee !important;
+}
+
+#projects .project-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+}
+
+#projects .project-badges .badge {
+    background: rgba(8, 145, 178, 0.08) !important;
+    color: #0891b2 !important;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(8, 145, 178, 0.15);
+}
+
+.dark #projects .project-badges .badge {
+    background: rgba(34, 211, 238, 0.08) !important;
+    color: #22d3ee !important;
+    border: 1px solid rgba(34, 211, 238, 0.15);
+}
+
+#projects .project-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary-color);
+    line-height: 1.5;
+}
+
+#projects .project-links a {
+    color: #0891b2 !important;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.dark #projects .project-links a {
+    color: #22d3ee !important;
+}
+
+#projects .project-links a:hover {
+    opacity: 1;
+}
+
+/* ===== Social Icons ===== */
+
+#hero .social-icon,
+#hero .social-icon.btn {
+    background: transparent !important;
+    border: 1px solid rgba(8, 145, 178, 0.3) !important;
+    color: #0891b2 !important;
+    box-shadow: none !important;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+#hero .social-icon:hover,
+#hero .social-icon.btn:hover {
+    background: rgba(8, 145, 178, 0.1) !important;
+    color: #0e7490 !important;
+    border-color: #0891b2 !important;
+    transform: translateY(-2px);
+}
+
+.dark #hero .social-icon,
+.dark #hero .social-icon.btn {
+    color: #22d3ee !important;
+    border-color: rgba(34, 211, 238, 0.3) !important;
+}
+
+.dark #hero .social-icon:hover,
+.dark #hero .social-icon.btn:hover {
+    background: rgba(34, 211, 238, 0.1) !important;
+    color: #67e8f9 !important;
+    border-color: #22d3ee !important;
+}
+
+/* ===== Scrollbar ===== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0891b2, #22d3ee);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0e7490, #0891b2);
+}

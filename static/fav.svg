@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0891b2"/>
+      <stop offset="50%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#bg)"/>
+  <!-- Music note ♪ -->
+  <g transform="translate(130, 72) scale(0.68)">
+    <!-- Note stem -->
+    <rect x="295" y="60" width="32" height="340" rx="16" fill="white" opacity="0.95"/>
+    <!-- Flag / beam -->
+    <path d="M327 60 C327 60, 420 80, 420 160 C420 220, 360 200, 327 180" fill="white" opacity="0.9"/>
+    <!-- Second flag -->
+    <path d="M327 120 C327 120, 400 140, 400 200 C400 250, 350 235, 327 220" fill="white" opacity="0.75"/>
+    <!-- Note head (ellipse) -->
+    <ellipse cx="260" cy="400" rx="75" ry="55" transform="rotate(-20, 260, 400)" fill="white" opacity="0.95"/>
+  </g>
+</svg>
